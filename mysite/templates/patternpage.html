@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>Signals</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static '/signal.css'%}">
+        <link rel="shortcut icon" href="{% static '/images/logo.svg'%}">
+        
+        <script type="text/javascript" src="{% static '/formatTriggerList.js'%}"></script>
+    </head>
+    <header>
+        <div class="container">
+            {% load static %}
+            <img alt="logo" class="logo" src="{% static '/images/logo.svg'%}">
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/signals">Signals</a></li>
+                    <li><a href="/signalsob ">Signals (order book)</a></li>
+                    <li><a href="#">About</a></li>    
+                </ul>
+            </nav>
+        </div>
+        <div class="user">
+            <span> User: {{request.user}}</span>
+            <span><a href="/logout">Logout</a></span>
+        <div>
+    </header>
+    <h1>Active Signals</h1>
+    <div class="buttons">
+    <form  action="" method="POST">
+        <button class = "button" name="History" value="History">History</button>
+        {% csrf_token %}
+    </form>
+    <form  action="" method="GET">
+        <button class = "button" name="Active" value="Active">Active</button>
+        {% csrf_token %}
+    </form>
+     
+    </div>
+    <body>
+        <table class="signaltable table-sortable">
+            <thead>
+                <tr>
+                    <th data-column="symbol" data-order="desc">Symbol </th>
+                    <th data-column="Direction" data-order="desc">Direction </th>
+                    <th data-column="Pattern" data-order="desc">Pattern</th>
+                    <th data-column="Time" data-order="desc">Enter Time</th>
+                    <th data-column="PriceEntered" data-order="desc">Price Entered </th>
+                    <th data-column="active" data-order="desc">active</th>
+                    <th data-column="Profit" data-order="desc">Profit</th>
+                </tr>
+            </thead>
+            <h3>Total Profit: {{totalProfit}}</h3>
+            <h3>Accuracy: {{accuracy}}</h3>
+            <h3>Unrealized: {{urealized}}</h3>
+            <tbody class="data">
+            {% for trigger in triggers %}
+            <tr>
+            <td>{{trigger.symbol}} </td>
+            <td class={{trigger.direction}}>{{trigger.direction}}</td>
+            <td>{{trigger.pattern}}</td>
+            <td>{{trigger.time}}</td>
+            <td>{{trigger.priceEntered}}</td>
+            <td class="time">{{trigger.activeUntil}}</td>
+            <td>{{trigger.profit}}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+            
+            
+        
+        </table>   
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,230 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    }
+.frame {
+    width:100%;
+    height: 100%;
+}
+.loginBtn {
+    height: 45px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: linear-gradient(#e66465, #9198e5);
+    background-size: 200%;
+    color: white;
+    font-size: 16px;
+    transition: .5s;
+}
+
+.loginBtn:hover {
+    background-position: right;
+    font-size: 17px;
+}
+
+.signup {
+    color: white;
+    margin-top: 45px;
+    text-align: center;
+
+}
+.signup a  {
+    color: black;
+}
+
+
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+.logo {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+header {
+    background: #55d6aa;
+        
+}
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+nav {
+    margin: auto;
+    text-align: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 35px;
+    position: relative;
+}
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover{
+    color: #000;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0%;
+    background-color: #444;
+
+    position: absolute;
+    top: 10;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+    
+}
+.user {
+    float: right;
+    top: 0px;
+    margin-right: 100;
+}
+
+.triggers{
+    background-color: black;
+    padding: 3em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+
+}
+.triggers .cardbuy {
+    background-color: green;
+    border-radius: 200px;
+    border-top: 10px;
+    padding: 1em;
+    flex-direction: row;
+    color: white;
+}
+.triggers .cardsell {
+    background-color: #e66465;
+    border-radius: 200px;
+    border-top: 10px;
+    padding: 1em;
+    flex-direction: row;
+    color: white;
+}
+
+.coins {
+    visibility: visible;
+}
+iframe {
+    height: auto;
+    width: auto;
+    margin: auto;
+}
+
+h1 {
+    color: white;
+}
+
+
+.signaltable {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.signaltable thead tr {
+    background-color: green;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+.signaltable th,td{
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+    text-align: center;
+}
+
+.Buy {
+    color: green;
+}
+.Sell {
+    color: red;
+}
+
+.loss {
+    color: red;
+}
+.profit {
+    color: green;
+}
+
+form {
+    color: white;
+}
+
+body {
+    min-height: 100vh;
+    background: #211c1c;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 45;
+    color: white;
+    font-size: 20px;
+
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    color: black;
+    border: 2px solid black;
+  }
+
+  .buttons {
+    text-align: center;
+
+  }
+  h3 {
+      color: white;
+      text-align: center;
+  }

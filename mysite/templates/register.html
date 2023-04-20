@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Login</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static '/main.css'%}">
+    </head>
+    <body>
+        <form method="post" action="">
+            {% csrf_token %}
+            <h1>Register</h1>
+            {{form.username.label}}
+            <div class = "textBox">
+                {{form.username}} 
+            </div>
+            {{form.email.label}}
+            <div class = "textBox">
+                {{form.email}}   
+            </div>
+            {{form.password1.label}}
+            <div class = "textBox">
+                {{form.password1}}
+            </div>
+            {{form.password2.label}}
+            <div class = "textBox">
+                {{form.password2}} 
+            </div>
+            {{forms.errors}}
+            {% for message in messages %}
+                <p id="messages">{{message}}</p>
+            {% endfor %}
+            <input type="submit" value="REGISTER" class="loginbtn"> 
+        </form>
+    </body>
+</html>
+

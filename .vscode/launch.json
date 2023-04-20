@@ -1,0 +1,22 @@
+{
+    "name": "Python: Django",
+    "type": "python",
+    "request": "launch",
+    "program": "${workspaceFolder}/manage.py",
+    "args": [
+        "runserver",
+    ],
+    "django": true,
+    "configurations": [
+        {
+            "name": "Python: Django",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}\\mysite\\manage.py",
+            "args": [
+                "runserver"
+            ],
+            "django": true
+        }
+    ]
+}

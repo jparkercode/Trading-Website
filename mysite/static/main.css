@@ -1,0 +1,83 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+body {
+    min-height: 100vh;
+    background: linear-gradient(blue, #9198e5);
+}
+form {
+    background: white;
+    width: 350px;
+    height: 580px;
+    padding: 75px 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: black;
+    border: 2px solid black;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 45;
+    color: black;
+    font-size: 20px;
+
+}
+
+.textBox{
+    border: 2px solid black;
+    position: relative;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.textBox input{
+    background: lightgrey;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 8%;
+    
+    color: black;
+
+}
+
+.loginBtn {
+    height: 45px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: linear-gradient(#e66465, #9198e5);
+    background-size: 200%;
+    color: white;
+    font-size: 16px;
+    transition: .5s;
+}
+
+.loginBtn:hover {
+    background-position: right;
+    font-size: 17px;
+}
+
+.signup {
+    color: rgb(0, 17, 255);
+    margin-top: 45px;
+    text-align: center;
+    border-bottom: 1px #0015ff;
+    border-bottom-style: solid;
+
+}
+.signup a  {
+    color: black;
+}
+
+
